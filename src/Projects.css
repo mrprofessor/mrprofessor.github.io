@@ -1,0 +1,8 @@
+.card {
+	background-color: inherit;
+	border: .5px solid #0a0;
+	margin: 2rem auto;
+}
+.card .btn-outline-success{
+	color: silver;
+}

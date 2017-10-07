@@ -1,0 +1,15 @@
+#menu {
+    margin-top: .5rem;
+	padding: .5rem;
+	background-color: #0a0;
+}
+#menu a {
+	font-size: 1.4rem;
+	color: silver ;
+}
+/* #menu a :hover {
+	font-size: 2rem;
+} */
+.active {
+    color: #0099FF !important;
+}

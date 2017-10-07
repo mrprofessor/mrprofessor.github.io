@@ -1,0 +1,10 @@
+body {
+  background: black;
+	margin-top: 2em; 
+	font-family: Consolas, Menlo, Monaco, Lucida Console, Courier New, Courier, monospaced;
+}
+
+body,a {
+	color: #0a0;
+}
+ 
