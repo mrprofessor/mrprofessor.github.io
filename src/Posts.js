@@ -12,7 +12,7 @@ class Posts extends Component {
                             <a target="blank" href={item.link} className="btn btn-outline-success">read !</a>
                         </div> 
                     </div>
-                ) 
+                );
         });
         
         return(

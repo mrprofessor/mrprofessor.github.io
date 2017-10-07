@@ -16,14 +16,14 @@
         },
         {
             "title" : "color-game",
-            "description": "RGB color game.",
+            "description": "RGB color game using vanilla javascript",
             "source" : "https://github.com/Mrprofessor/color-game",
             "demo" : "https://mrprofessor.github.io/color-game",
             "id" : 203
         },
         {
             "title" : "wiki-viewer",
-            "description": "Search Wikipedia entries in a search box and get the resulting Wikipedia entries.",
+            "description": "Type in and get wikipedia results.",
             "source" : "https://github.com/Mrprofessor/wiki-viewer",
             "demo" : "https://mrprofessor.github.io/wiki-viewer/",
             "id" : 204
