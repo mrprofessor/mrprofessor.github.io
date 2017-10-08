@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    Link,
-    NavLink,
-    IndexLink
+    NavLink
 } from 'react-router-dom';
 
 import './Menu.css';
 import Posts from './Posts';
 import Projects from './Projects';
+import About from './About';
 
 // const Home = () => (
 //     <div>
@@ -17,11 +16,11 @@ import Projects from './Projects';
 //     </div>
 // )
 
-const About = () => (
-    <div>
-        <h2>About</h2>
-    </div>
-)
+// const About = () => (
+//     <div>
+//         <h2>About</h2>
+//     </div>
+// )
 
 // const Topic = ({ match }) => (
 //     <div>
@@ -58,20 +57,15 @@ const About = () => (
 // )
 
 class Menu extends Component {
-    // constructor(props) {
-    //     super(props);
 
-    //     // console.log(this.props.posts);
-    // }
-    
     render() {
         return (
             <Router>
                 <div>
                     <nav className="nav nav-justified " id="menu">
-                        <NavLink className="nav-item nav-link" to="/" exact activeClassName="active" onlyActiveOnIndex>Posts</NavLink>
-                        <NavLink className="nav-item nav-link" to="/projects" activeClassName="active" onlyActiveOnIndex>Projects</NavLink>
-                        <NavLink className="nav-item nav-link" to="/about" activeClassName="active" onlyActiveOnIndex>About</NavLink>
+                        <NavLink className="nav-item nav-link" to="/" exact activeClassName="active" >Posts</NavLink>
+                        <NavLink className="nav-item nav-link" to="/projects" activeClassName="active" >Projects</NavLink>
+                        <NavLink className="nav-item nav-link" to="/about" activeClassName="active" >About</NavLink>
                     </nav>
 
                     <br />

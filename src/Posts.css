@@ -6,3 +6,9 @@
 .card .btn-outline-success{
 	color: silver;
 }
+#terminal {
+	font-weight: bold;
+}
+.special {
+	color: rgba(215, 253, 2,1) !important;
+}
