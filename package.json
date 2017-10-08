@@ -8,6 +8,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "react-typist": "^1.1.1",
+    "react-typist-loop": "0.0.3",
     "typed.js": "^2.0.6"
   },
   "scripts": {
@@ -18,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://mrprofessor.github.io/",
+  "homepage": "https://mrprofessor.github.io/",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }

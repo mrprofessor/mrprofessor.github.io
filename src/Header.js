@@ -33,14 +33,14 @@ class Header extends Component {
         if(this.state.subs === true) {
             return(
                 <div>
-                    <h1><Typist onTypingDone={this.nextLine}>Prof's home</Typist></h1>
+                    <h1><Typist >Prof's <span className="flash">blog</span></Typist></h1>
                     <Typist onTypingDone={this.nextMenu} className="text">Night gathers, and now my watch begins.</Typist>
                 </div>
             )
         } 
         return(
             <div>
-                <h1><Typist onTypingDone={this.nextLine}>Prof's home</Typist></h1>
+                <h1><Typist onTypingDone={this.nextLine}>Prof's <span className="flash">blog</span></Typist></h1>
             </div>
         )
         

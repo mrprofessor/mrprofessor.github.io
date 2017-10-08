@@ -28,9 +28,12 @@ class App extends Component {
             });
     }
     myCallback(menu) {
-        this.setState({
-            isDone : menu
-        })
+        setTimeout(() => {
+            this.setState({
+                isDone : menu
+            })
+        }, 500)
+        
         // console.log(this.state.isDone);
         // return menu;
     }

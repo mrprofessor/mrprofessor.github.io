@@ -5,7 +5,6 @@ import {
     NavLink
 } from 'react-router-dom';
 
-import './Menu.css';
 import Posts from './Posts';
 import Projects from './Projects';
 import About from './About';

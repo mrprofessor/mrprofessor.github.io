@@ -7,4 +7,107 @@ body {
 body,a {
 	color: #0a0;
 }
- 
+#menu {
+	margin-top: .5rem;
+background-color: #0a0;
+}
+.nav-link {
+/* margin: .5rem; */
+line-height: 2;
+}
+#menu a {
+font-size: 1.4rem;
+font-weight: 700;
+color: silver ;
+}
+/* #menu a :hover {
+font-size: 2rem;
+} */
+.active {
+background: rgba(215, 253, 2,1);
+color: #0a0 !important;
+}
+.card {
+	background-color: inherit;
+	border: .5px solid #0a0;
+	margin: 2rem auto;
+}
+.card .btn-outline-success{
+	color: silver;
+}
+.card :hover{
+	background: rgba(215, 253, 2,1);
+}
+.special {
+	color: rgba(215, 253, 2,1) !important;
+}
+
+.terminalText {
+    color: #aaa !important;
+}
+#terminal , .terminalText{
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .terminalText {
+		color: #aaa !important;
+	}
+	#terminal , .terminalText{
+		font-weight: bold;
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width: 500px) {
+    .terminalText {
+		color: #aaa !important;
+	}
+	#terminal , .terminalText{
+		font-weight: bold;
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 350px) {
+    .terminalText {
+		color: #aaa !important;
+	}
+	#terminal , .terminalText{
+		font-weight: bold;
+		font-size: 8px;
+	}
+}
+
+
+.flash {
+	color: rgba(215, 253, 2,1);
+	font-weight: bold;
+	animation-name: blinker;
+	animation-duration: 0.7s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/* .flash:before{
+	content: 'Original Text';
+	color: rgba(215, 253, 2,1);
+    font-size: 600%;
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+} */
+
+@keyframes blinker {
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+/* @keyframes blinker {
+	0% {font-size:600%; opacity:1;}
+    25% {font-size:570%; opacity:0;}
+    50% {font-size:600%; opacity:1;}
+    65% {font-size:570%; opacity:0;}
+    80% {font-size:600%; opacity:1; content: "Changed Text"}
+    90% {font-size:570%; opacity:0;}
+    100% {font-size:600%;opacity:1; content: "Original Text"}
+} */

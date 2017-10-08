@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Typist from 'react-typist';
-import './Projects.css'
 import ProjectList from './ProjectList.json';
 
 const projectData = ProjectList.projects.map((item) => {
@@ -32,9 +31,11 @@ class Posts extends Component{
     
     handleTyping() {
         console.log("Getting repositories");
-        this.setState({
-            isTypingDone : true
-        });
+        setTimeout(() => {
+            this.setState ({
+                isTypingDone : true
+            })
+        },500) 
     }
 
     render() {
@@ -59,7 +60,7 @@ class Posts extends Component{
                 <Typist onTypingDone={this.handleTyping} startDelay={500} className="terminalText">
                     <i>get </i>
                     posts --all &amp;&amp; <i>echo </i> 
-                    posts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                    posts
                 </Typist>
             </div>
         )
