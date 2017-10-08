@@ -9,6 +9,7 @@
 } */
 .text {
     color: #aaa;
+    font-weight: bold;
 }
 
 @keyframes blink {

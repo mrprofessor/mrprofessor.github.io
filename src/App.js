@@ -2,19 +2,16 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Menu from './Menu';
 
-
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isLoading: true
         }
-
-        // this.componentDidMount = this.componentDidMount.bind(this);
+        this.myCallback = this.myCallback.bind(this); 
     }
     componentDidMount() {
         let url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mrprofessor%2F";
-        // this.fetch = this.fetch.bind(this);
         fetch(url)
             .then( (response) =>{
                 return response.json();
@@ -22,26 +19,36 @@ class App extends Component {
             .then( (data) => {
                 this.setState({
                     isLoading: false,
-                    postData: data.items
+                    postData: data.items,
+                    isDone: false
                 })
             })
             .catch((error) => {
-                console.error(error);
+                console.error(error); //set state to bad
             });
     }
+    myCallback(menu) {
+        this.setState({
+            isDone : menu
+        })
+        // console.log(this.state.isDone);
+        // return menu;
+    }
+    
     render() {
-        if(this.state.isLoading) {
+        // console.log(this.myCallback);
+        if(!this.state.isLoading && this.state.isDone) {
             return (
                 <div className="container">
-                    <Header />
-                    
+                    <Header myCallback={this.myCallback}/>
+                    <Menu posts={this.state.postData} />
                 </div>
             )
         }
         return (
             <div className="container">
-                <Header />
-                <Menu posts={this.state.postData}/>
+                <Header myCallback={this.myCallback}/>
+                {/* <Menu posts={this.state.postData} /> */}
             </div>
         )
     }
