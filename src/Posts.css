@@ -6,9 +6,25 @@
 .card .btn-outline-success{
 	color: silver;
 }
-#terminal {
-	font-weight: bold;
-}
+
 .special {
 	color: rgba(215, 253, 2,1) !important;
 }
+
+.terminalText {
+    color: #aaa !important;
+}
+#terminal , .terminalText{
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 767px) {
+    .terminalText {
+		color: #aaa !important;
+	}
+	#terminal , .terminalText{
+		font-weight: bold;
+		font-size: 13px;
+	}
+}
+

@@ -47,7 +47,7 @@ class Posts extends Component {
                         <span className="special">~ $&nbsp;</span>
                     </p>
                 </div>
-                <Typist onTypingDone={this.handleTyping} startDelay={1000} className="text">
+                <Typist onTypingDone={this.handleTyping} startDelay={1000} className="terminalText">
                     <i>get </i>
                     posts --all &amp;&amp; <i>echo </i> 
                     posts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                            
