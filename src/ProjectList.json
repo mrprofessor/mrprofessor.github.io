@@ -2,7 +2,7 @@
         "projects" : [
         {
             "title" : "YoutubeSearchApp",
-            "description": "Youtube searching app(react)",
+            "description": "Youtube video searching app(react)",
             "source" : "https://github.com/Mrprofessor/YoutubeSearchApp",
             "demo" : "https://tubesearch.herokuapp.com/",
             "id" : 201

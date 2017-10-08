@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    NavLink,
+    IndexLink
 } from 'react-router-dom';
 
 import './Menu.css';
@@ -67,9 +69,9 @@ class Menu extends Component {
             <Router>
                 <div>
                     <nav className="nav nav-justified " id="menu">
-                        <li className="nav-item nav-link" ><Link to="/" >Posts</Link></li>
-                        <li className="nav-item nav-link" ><Link to="/projects" >Projects</Link></li>
-                        <li className="nav-item nav-link" ><Link to="/about" >About</Link></li>
+                        <NavLink className="nav-item nav-link" to="/" exact activeClassName="active" onlyActiveOnIndex>Posts</NavLink>
+                        <NavLink className="nav-item nav-link" to="/projects" activeClassName="active" onlyActiveOnIndex>Projects</NavLink>
+                        <NavLink className="nav-item nav-link" to="/about" activeClassName="active" onlyActiveOnIndex>About</NavLink>
                     </nav>
 
                     <br />
@@ -81,6 +83,5 @@ class Menu extends Component {
             </Router>
         );
     }
-
 }
 export default Menu

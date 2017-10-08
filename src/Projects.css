@@ -1,4 +1,4 @@
 .card :hover{
-    background: #d7fd02;
-    color: #000;
+    background: rgba(215, 253, 2,1);
+    /* color: #000; */
 }
