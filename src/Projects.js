@@ -10,9 +10,9 @@ const projectData = ProjectList.projects.map((item) => {
                     <h5 className="card-title"><b>{item.title}</b></h5>
                     <p className="card-text text-muted">{item.description}</p>
                     <a target="blank" style={{marginRight:10}} 
-                    href={item.source} className="btn btn-outline-success">source !</a>
+                    href={item.source} className="btn btn-outline-success cardbtn">source !</a>
                     <a target="blank" 
-                    href={item.demo} className="btn btn-outline-success">demo !</a>
+                    href={item.demo} className="btn btn-outline-success cardbtn">demo !</a>
                 </div> 
             </div>
         </div>
@@ -47,6 +47,8 @@ class Posts extends Component{
             )
         }
 
+        
+
         return(
             <div className="row" style={{paddingLeft: 20}}>
                 <div>
@@ -59,8 +61,8 @@ class Posts extends Component{
                 </div>
                 <Typist onTypingDone={this.handleTyping} startDelay={500} className="terminalText">
                     <i>get </i>
-                    posts --all &amp;&amp; <i>echo </i> 
-                    posts
+                    repos --all &amp;&amp; <i>echo </i> 
+                    repos
                 </Typist>
             </div>
         )
