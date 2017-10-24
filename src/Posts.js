@@ -25,7 +25,7 @@ class Posts extends Component {
                         <div className="card text-center" key={item.guid}>
                             <div className="card-body">
                                 <h4 className="card-title">{item.title.replace(/&amp;/g, '&')}</h4>
-                                <a target="blank" href={item.link} className="btn btn-outline-success">read !</a>
+                                <a target="blank" href={item.link} className="btn btn-outline-success cardbtn">read !</a>
                             </div> 
                         </div>
                 );

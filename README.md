@@ -1,2 +1,2 @@
 # newportfolio
-Portfolio using react and typed.
+Portfolio using react and medium-api.
