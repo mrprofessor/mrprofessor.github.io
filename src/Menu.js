@@ -56,7 +56,7 @@ import About from './About';
 // )
 
 class Menu extends Component {
-
+    
     render() {
         return (
             <Router>
@@ -70,7 +70,7 @@ class Menu extends Component {
                     <br />
 
                     <Route exact path="/"  render={(props) => (<Posts test={this.props} />)} />
-                    <Route path="/projects" component={Projects} />
+                    <Route path="/projects"  render={(props) => (<Projects test={this.props} />)} />
                     <Route path="/about" component={About} />
                 </div>
             </Router>

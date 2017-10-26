@@ -52,7 +52,7 @@ class About extends Component {
                     <p>
                         Kidding...This site was built with the amazing <code><a target="blank" href="https://reactjs.org">react</a>
                         </code> , inspired by the bloody IBM mainframe screen and proudly hosted on <code>
-                        <a target="blank"href="https://pages.github.com/">Github.</a></code>
+                        <a target="blank"href="https://github.com/">Github.</a></code>
                     </p>
                 </div>
             );

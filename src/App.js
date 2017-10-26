@@ -6,25 +6,44 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLoading: true
+            isPostLoading: true,
+            isProjectLoading: true
         }
         this.myCallback = this.myCallback.bind(this); 
     }
     componentDidMount() {
-        let url = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mrprofessor%2F";
-        fetch(url)
+        // fetch posts
+        let postURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mrprofessor%2F";
+        fetch(postURL)
             .then( (response) =>{
                 return response.json();
             })
             .then( (data) => {
                 this.setState({
-                    isLoading: false,
+                    isPostLoading: false,
                     postData: data.items,
                     isDone: false
                 })
             })
             .catch((error) => {
                 console.error(error); //set state to bad
+            });
+        
+        // Fetch projects
+        let projectURL = "https://mrprofessor.github.io/api/projectList/projectList.json";
+        fetch(projectURL)
+            .then( (response) => {
+                return response.json();
+            })
+            .then( (data) => {
+                this.setState({
+                    isProjectLoading: false,
+                    projectData: data.projects,
+                    isDone: false
+                })
+            })
+            .catch((error) => {
+                console.error("Can't load projects.");
             });
     }
     myCallback(menu) {
@@ -40,11 +59,11 @@ class App extends Component {
     
     render() {
         // console.log(this.myCallback);
-        if(!this.state.isLoading && this.state.isDone) {
+        if (!this.state.isPostLoading && !this.state.isProjectLoading && this.state.isDone) {
             return (
                 <div className="container">
                     <Header myCallback={this.myCallback}/>
-                    <Menu posts={this.state.postData} />
+                    <Menu posts={this.state.postData} projects={this.state.projectData} />
                 </div>
             )
         }

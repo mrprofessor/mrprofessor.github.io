@@ -5,12 +5,12 @@ class Posts extends Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             isTypingDone : false
         }
         this.handleTyping = this.handleTyping.bind(this);
     }
+
     handleTyping() {
         console.log("Getting posts");
         setTimeout(() => {
@@ -19,21 +19,22 @@ class Posts extends Component {
             })
         },500) 
     }
+
     render() {
-        let str = this.props.test.posts.map((item) => {
+        let postData = this.props.test.posts.map((item) => {
             return (
-                        <div className="card text-center" key={item.guid}>
-                            <div className="card-body">
-                                <h4 className="card-title">{item.title.replace(/&amp;/g, '&')}</h4>
-                                <a target="blank" href={item.link} className="btn btn-outline-success cardbtn">read !</a>
-                            </div> 
-                        </div>
+                <div className="card text-center" key={item.guid}>
+                    <div className="card-body">
+                        <h4 className="card-title">{item.title.replace(/&amp;/g, '&')}</h4>
+                        <a target="blank" href={item.link} className="btn btn-outline-success cardbtn">read !</a>
+                    </div> 
+                </div>
                 );
         });
         if(this.state.isTypingDone) {
             return(
                 <div>
-                    {str}
+                    {postData}
                 </div>
             )
         }
