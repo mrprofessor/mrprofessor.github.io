@@ -34,7 +34,9 @@ class Header extends Component {
             return(
                 <div>
                     <h1><Typist >prof's <span className="flash">blog</span></Typist></h1>
-                    <Typist onTypingDone={this.nextMenu} className="text">Night gathers, and now my watch begins.</Typist>
+                    <Typist onTypingDone={this.nextMenu} className="text">
+                        Self-proclaimed <kbd>full stack developer</kbd> & open source enthusiast.
+                    </Typist>
                 </div>
             )
         } 
@@ -43,8 +45,6 @@ class Header extends Component {
                 <h1><Typist onTypingDone={this.nextLine}>prof's <span className="flash">blog</span></Typist></h1>
             </div>
         )
-        
-        
     }
 }
 
