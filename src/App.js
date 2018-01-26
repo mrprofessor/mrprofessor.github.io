@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Feed from 'rss-to-json'
 import Header from './Header';
 import Menu from './Menu';
 
@@ -13,11 +12,8 @@ class App extends Component {
         this.myCallback = this.myCallback.bind(this); 
     }
     componentDidMount() {
-        Feed.load('https://medium.com/feed/@mrprofessor', function(err, rss){
-            console.log(rss);
-        });
         // fetch posts
-        let postURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40mrprofessor%2F";
+        let postURL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mrprofessor`;
         fetch(postURL)
             .then( (response) =>{
                 return response.json();

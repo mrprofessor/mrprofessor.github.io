@@ -27,15 +27,19 @@ class About extends Component {
                     <p>
                         I am an individual(debatable) from planet Earth with humongous curiosity in technology and 
                         practically zero talent.I love to code as long as I know how to solve the problem and beyond 
-                        that I run to StackOverflow guys.Yeah I am a software developer (yeah.. that means I edit excel 
-                        sheets most of the time at work) and my buddies call me <kbd>prof</kbd>.
+                        that I run to those StackOverflow guys.Yeah I am a software developer (yeah.. that means I 
+                        started my carreer editing excel sheets most of the time at work) and my buddies call 
+                        me <kbd>prof</kbd>.
                     </p>
                     <p>
                         It all started in my 7th grade when I first watched Matrix.I really wanted to be a bullet 
                         dodging hacker.I should have taken the blue pill…well that’s past.Then like all other kids 
                         I started playing games and planned to build one someday(failed terribly).By following NEVER 
-                        GET DOWN mantra I graduated as a <kbd>computer science engineer</kbd> and settled for an entry level 
-                        developer job in an outsourcing company.Gotta find Oracle ASAP..huh!
+                        GET DOWN mantra I graduated as a <kbd>computer science engineer</kbd> and had settled for an 
+                        entry level developer job in an outsourcing company.Left that when I found this kick-ass 
+                        startup named <kbd><a target="blank" href="https://turbot.com">Turbot.</a></kbd> Gotta find 
+                        Oracle ASAP..huh!
+                        
                     </p>
                     <p>
                         While I am not at a WorkStation I am probably sleeping or playing cricket.
