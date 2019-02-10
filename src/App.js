@@ -30,8 +30,8 @@ class App extends Component {
             });
         
         // Fetch projects
-        let projectURL = "https://mrprofessor.github.io/api/projectList/projectList.json";
-        fetch(projectURL)
+        let projectURL = "https://www.mrprofessor.io/api/projectList/projectList.json";
+        fetch(projectURL, {redirect: "follow"})
             .then( (response) => {
                 return response.json();
             })
