@@ -30,7 +30,7 @@ class App extends Component {
             });
         
         // Fetch projects
-        let projectURL = "https://www.mrprofessor.io/api/projectList/projectList.json";
+        let projectURL = "https://mrprofessor.io/api/projectList/projectList.json";
         fetch(projectURL, {redirect: "follow"})
             .then( (response) => {
                 return response.json();
